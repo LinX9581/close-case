@@ -34,18 +34,25 @@ print("firstTime########################")
 
 #時間 td 標籤
 findFirstTimeTd=sp.find_all("td",{"width":"15%" , "class":"text"})
+
+#td標籤裡的標籤a
+#<a href="JavaScript:openWin('pop_up_profile.asp?PF=303&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 22/08/2018&nbsp;at&nbsp;15:31">linx9581</a>
 arrFirstTimeTagA=[]		
+
+#標籤a 的 title內容
 arrFirstTime=[]
+
+#搜尋時間  ex. 05/20/2018 at 12:40
 arrRegexFirstTime=[]
+
 for timeNum in findFirstTimeTd:
 	arrFirstTimeTagA.append(timeNum.find("a"))
 
 for timeCount in range(0,len(arrFirstTimeTagA)):	
 	arrFirstTime.append(arrFirstTimeTagA[timeCount].get("title"))
-	#print(arrFirstTime[timeCount])
-	regexTime=re.search(r"(\d{4}/\d{1,2}/\d{1,2}\s[a-z][a-z]\s\d{1,2}:\d{1,2})",arrFirstTime[timeCount])
+	regexTime=re.search(r"(\d{1,2}/\d{1,2}/\d{4}\s[a-z][a-z]\s\d{1,2}:\d{1,2})",arrFirstTime[timeCount])
 	arrRegexFirstTime.append(regexTime)
-	print(parser.parse(arrRegexFirstTime[timeCount].group(0)))
+	print(parser.parse(arrRegexFirstTime[timeCount].group(0))) #時間正規化 ex.2018-05-20 12:40:00
 	
 print("lastTime##############")
 #######################lastTime########################
