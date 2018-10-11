@@ -1,0 +1,441 @@
+﻿
+
+<html>
+<head>
+<title>電腦維修站: 已結案維修紀錄-硬體不正常類</title>
+<meta name="copyright" content="Copyright (C) 2001-2004 Bruce Corkhill" />
+
+<!-- Web Wiz Forums ver. 7.9 is written and produced by Bruce Corkhill �2001-2004
+     	If you want your own FREE Forum then goto http://www.webwizforums.com -->
+
+<script language="JavaScript">
+
+//Function to choose how many topics are show
+function ShowTopics(Show){
+
+   	strShow = escape(Show.options[Show.selectedIndex].value);
+   	document.cookie = "TS=" + strShow
+
+   	if (Show != "") self.location.href = "forum_topics.asp?FID=21&PN=1";
+	return true;
+}
+</script>
+<script language="javascript" src="includes/default_javascript.js" type="text/javascript"></script>
+
+<link href="includes/default_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF" text="#000000" background="forum_images/bg.gif"><table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+ <tr> 
+  <td class="text">
+   <a href="http://forum.shu.edu.tw" target="_self"><img src="forum_images/Logo.jpg" border="0"></a>
+  </td>
+  <td align="center" height="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center">&nbsp;&nbsp;<a href="active_topics.asp" target="_self" class="nav"><img src="forum_images/active_topics.gif" align="absmiddle" border="0" alt="最新主題">最新主題</a>&nbsp;&nbsp;<a href="members.asp" target="_self" class="nav"><img src="forum_images/members_list.gif" border="0" align="absmiddle" alt="顯示論壇會員列表">會員列表</a>&nbsp;&nbsp;<a href="search_form.asp?FID=21" target="_self" class="nav"><img src="forum_images/search.gif" align="absmiddle" border="0" alt="搜尋論壇">搜尋</a>&nbsp;&nbsp;<a href="help.asp" target="_self" class="nav"><img src="forum_images/help_icon.gif" align="absmiddle" border="0" alt="幫助">幫助</a><br /></td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;&nbsp;<a href="registration_rules.asp?FID=21" target="_self" class="nav"><img src="forum_images/register_icon.gif" alt="註冊" border="0" align="absmiddle">註冊</a>&nbsp;&nbsp;<a href="login_user.asp?FID=21" target="_self" class="nav"><img src="forum_images/login_icon.gif" alt="登入" border="0" align="absmiddle">登入</a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr>
+  <td align="left" class="heading">已結案維修紀錄-硬體不正常類  <span class="smText">(<img src="forum_images/forum_locked_icon.gif" align="baseline" alt="版面被鎖定"> 版面被鎖定)</span></td>
+</tr>
+ <tr>
+  <td align="left" class="bold"><img src="forum_images/open_folder_icon.gif" border="0" align="absmiddle">&nbsp;<a href="default.asp" target="_self" class="boldLink">電腦維修站</a> : <a href="forum_topics.asp?FID=21" target="_self" class="boldLink">已結案維修紀錄-硬體不正常類</a></td>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="1" cellpadding="3" align="center">
+ <tr>
+  <form>
+   <td width="50%"><span class="text">顯示主題</span>
+    <select name="show" onChange=ShowTopics(this)>
+     <option value="0" >全部</option>
+     <option value="7" >從上個星期開始查看</option>
+     <option value="14" >從前兩個星期開始查看</option>
+     <option value="31" selected>從上個月份開始查看</option>
+     <option value="62" >從前兩個月開始查看</option>
+     <option value="182" >從前六個月開始查看</option>
+     <option value="365" >從一年前開始查看</option>
+    </select>
+   </td>
+   <td align="right" width="50%"><a href="post_message_form.asp?FID=21" target="_self"><img src="forum_images/new_post.gif" border="0" align="absmiddle" alt="發表新主題"></a></td>
+  </form>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#006699" align="center">
+ <tr>
+  <td>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+     <td bgcolor="#FFFFFF">
+   <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF">
+    <tr>
+     <td bgcolor="#CCCCCC" width="3%" class="tHeading" background="forum_images/table_bg_image.gif">&nbsp;</td>
+     <td bgcolor="#CCCCCC" width="41%" class="tHeading" background="forum_images/table_bg_image.gif">主題</td>
+     <td bgcolor="#CCCCCC" width="15%" class="tHeading" background="forum_images/table_bg_image.gif">主題作者</td>
+     <td bgcolor="#CCCCCC" width="7%" align="center" class="tHeading" background="forum_images/table_bg_image.gif">回覆</td>
+     <td bgcolor="#CCCCCC" width="7%" align="center" class="tHeading" background="forum_images/table_bg_image.gif">瀏覽</td>
+     <td bgcolor="#CCCCCC" width="29%" align="center" class="tHeading" background="forum_images/table_bg_image.gif">最後發表</td>
+    </tr>
+<tr><td bgcolor="" background="forum_images/table_bg.gif" colspan="6" class="tiHeading">論壇 主題</td></tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=32079&PN=1" target="_self" title="分機:82163地點:S4F鍵盤有些鍵打不出來">*C10-00-19159[S棟]產合處 黃小姐 鍵盤有些鍵打不出來(1H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=301&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 05/10/2018&nbsp;at&nbsp;15:54">Rina</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">12</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">05/10/2018&nbsp;at&nbsp;16:48
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=311','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">ponqzhen</a> <a href="forum_posts.asp?TID=32079&PN=1&get=last#262649" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="熱門主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31560&PN=1" target="_self" title="分機:2022地點:教務處課務組準備一套8300128Glinx958143334.6572569444">*C10-00-18959[行政]教務處 陳小姐 一套8300(2W)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=303&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 22/08/2018&nbsp;at&nbsp;15:31">linx9581</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">25</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">150</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">05/10/2018&nbsp;at&nbsp;16:38
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=10','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">HenryCH</a> <a href="forum_posts.asp?TID=31560&PN=1&get=last#262644" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=32054&PN=1" target="_self" title="電腦中毒地點：S405 分機：82172 tsaitsai032243377.5047800926">*C10-00-19146[S棟] 副校長辦公室楊小姐 S405電腦中毒(1D6H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 04/10/2018&nbsp;at&nbsp;11:01">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">16</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">04/10/2018&nbsp;at&nbsp;11:34
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=282','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">LucienJason</a> <a href="forum_posts.asp?TID=32054&PN=1&get=last#262503" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=32039&PN=1" target="_self" title="分機：83238地點：C419投影有問題去教室前先去系辦">*C10-00-19146[C棟]傳播學院 陳小姐 投影有問題(2D4H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=294&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 03/10/2018&nbsp;at&nbsp;13:53">kktjaljiges</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">13</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">04/10/2018&nbsp;at&nbsp;11:31
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=304','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">samuel</a> <a href="forum_posts.asp?TID=32039&PN=1&get=last#262502" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31995&PN=1" target="_self" title="地點:CB102分機:83133三台電腦無法開機(面對黑板右邊最後第二排)">*C10-00-19132[C棟]新聞系 林小姐 三台電腦無法開機(1d6h)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=312&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 01/10/2018&nbsp;at&nbsp;09:06">guan</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">20</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">01/10/2018&nbsp;at&nbsp;17:37
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=31995&PN=1&get=last#262357" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31875&PN=1" target="_self" title="地點:M512分機:63476電腦上學期加裝SSD後，便不能開機了。">*C10-00-19082[M棟]行管系 吳小姐 電腦不能開機(10d4h）</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=305&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 21/09/2018&nbsp;at&nbsp;10:44">kyon</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">34</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">01/10/2018&nbsp;at&nbsp;14:40
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=31875&PN=1&get=last#262329" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="熱門主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31876&PN=1" target="_self" title="地點:B4F分機:84101電腦不斷重新啟動，無法進入桌面。">*C10-00-19083[B棟]世新電台 倪小姐 電腦不斷重新啟動(6D4H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=305&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 21/09/2018&nbsp;at&nbsp;11:22">kyon</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">8</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">70</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">28/09/2018&nbsp;at&nbsp;14:16
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=303','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">linx9581</a> <a href="forum_posts.asp?TID=31876&PN=1&get=last#262261" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31691&PN=1" target="_self" title="鄧鄧要一台8100+SSD 在維修區重灌中 灌基本軟體 終教院 文念萱jmr167474043368.8725462963">準備一台8100+SSD(待送</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=280&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 11/09/2018&nbsp;at&nbsp;17:51">jmr1674740</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">32</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">26/09/2018&nbsp;at&nbsp;19:49
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=5','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">cydan</a> <a href="forum_posts.asp?TID=31691&PN=1&get=last#262176" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31951&PN=1" target="_self" title="大禮堂兩台投影機無法投影，開機就當機地點:大禮堂分機:83065tsaitsai032243369.6275925926">*C10-00-19117[A棟]體育室王老師 大禮堂投影機問題</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 26/09/2018&nbsp;at&nbsp;14:19">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">15</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">26/09/2018&nbsp;at&nbsp;16:07
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=5','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">cydan</a> <a href="forum_posts.asp?TID=31951&PN=1&get=last#262132" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31909&PN=1" target="_self" title="地點：S棟性別所分機：83612無線電腦鍵盤感應不良(已換過電池)">*C10-00-19099[S棟]性別所 江小姐 無線電腦鍵盤感應不良(OK)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=314&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 25/09/2018&nbsp;at&nbsp;11:11">zhou</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">3</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">18</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">26/09/2018&nbsp;at&nbsp;15:47
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=310','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Chou</a> <a href="forum_posts.asp?TID=31909&PN=1&get=last#262131" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31902&PN=1" target="_self" title="地點: S4F分機: 82162電腦打不開">*C10-00-19094[S棟]產合處 謝先生 電腦打不開(1D6H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 25/09/2018&nbsp;at&nbsp;09:25">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">25/09/2018&nbsp;at&nbsp;16:40
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=298','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">fang</a> <a href="forum_posts.asp?TID=31902&PN=1&get=last#262027" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31885&PN=1" target="_self" title="分機:82244地點:行政2F電腦記憶體不足 linx958143364.7228587963">*C10-00-19085 [行政]會計室 陳小姐 電腦記憶體不足(1D3H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=301&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 21/09/2018&nbsp;at&nbsp;14:17">Rina</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">21/09/2018&nbsp;at&nbsp;17:20
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=303','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">linx9581</a> <a href="forum_posts.asp?TID=31885&PN=1&get=last#261923" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31852&PN=1" target="_self" title="地點:C3F系辦分機:83132DVD無法讀取DVD那個槽不見了linx958143364.7181597222">*C10-00-19079[C棟]新聞系 林老師 DVD無法讀取(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=280&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 20/09/2018&nbsp;at&nbsp;14:13">jmr1674740</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">3</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">30</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">21/09/2018&nbsp;at&nbsp;17:13
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=303','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">linx9581</a> <a href="forum_posts.asp?TID=31852&PN=1&get=last#261922" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31828&PN=1" target="_self" title="地點M620 分機63442(秘書)">*C10-00-19074 [M棟]財金系 曾小姐 替換主機電池(2D2H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=10&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 19/09/2018&nbsp;at&nbsp;16:48">HenryCH</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">30</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">21/09/2018&nbsp;at&nbsp;14:05
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=301','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Rina</a> <a href="forum_posts.asp?TID=31828&PN=1&get=last#261893" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31792&PN=1" target="_self" title="地點：S 4樓 產合處分機：82167通知記憶體不足 但硬碟顯示空間仍有一半(已刪過一些檔案)電腦不斷重開機">*C10-00-19060[S棟]產合處 鄧小姐 顯示記憶體不足(待送(1D6H)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=314&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 18/09/2018&nbsp;at&nbsp;09:54">zhou</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">4</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">25</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">19/09/2018&nbsp;at&nbsp;14:49
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=310','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Chou</a> <a href="forum_posts.asp?TID=31792&PN=1&get=last#261648" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31806&PN=1" target="_self" title="地點：T104(往原民中心右邊的地方)TEL：83212狀況：主機又發生無法正常開機，請幫忙檢查，是否需要替換機體，謝謝。guan43362.3482638889">*C10-00-19066[T棟]廣電系 何老師 主機異常(1D6H)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=10&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 18/09/2018&nbsp;at&nbsp;16:18">HenryCH</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">4</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">39</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">19/09/2018&nbsp;at&nbsp;14:45
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=310','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Chou</a> <a href="forum_posts.asp?TID=31806&PN=1&get=last#261647" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31721&PN=1" target="_self" title="通報人：鄭秘書分機：83022處理地點：S205狀況描述：1個螢幕不定時會沒有訊號黑掉另一個也有不穩定的狀況">*C10-00-19036[S棟]外語中心 鄭小姐 S205螢幕不穩定(3D2H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=307&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 12/09/2018&nbsp;at&nbsp;19:21">Shiuan</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">4</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">35</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">17/09/2018&nbsp;at&nbsp;17:55
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=298','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">fang</a> <a href="forum_posts.asp?TID=31721&PN=1&get=last#261523" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31768&PN=1" target="_self" title="地點:諮商中心分機:82082電腦無法正常打開機">*C10-00-19054[行政] 學務處 蔡小姐 電腦無法正常打開機（1d4h）</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=312&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 17/09/2018&nbsp;at&nbsp;09:04">guan</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">17/09/2018&nbsp;at&nbsp;17:39
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=31768&PN=1&get=last#261520" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31705&PN=1" target="_self" title="分機:63934地點:M棟 企管系辦筆電很慢 不時當機linx958143355.4691782407">*C10-00-19030[M棟]企管系 黃小姐 筆電很慢不時當機(2D3H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=303&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 12/09/2018&nbsp;at&nbsp;11:15">linx9581</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">20</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">12/09/2018&nbsp;at&nbsp;15:28
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=281','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">eric1604</a> <a href="forum_posts.asp?TID=31705&PN=1&get=last#261269" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31669&PN=1" target="_self" title="地點: W202分機: 202無法進windows">*C10-00-19017[W棟]知經院 李小姐 無法進windows(2D6H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 10/09/2018&nbsp;at&nbsp;16:06">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">19</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">11/09/2018&nbsp;at&nbsp;16:48
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=306','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">bbryan662</a> <a href="forum_posts.asp?TID=31669&PN=1&get=last#261184" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31641&PN=1" target="_self" title="地點: C301分機: 83133電腦無法開機(型號8200)">*C10-00-19008[C棟]新聞系 林小姐 電腦無法開機(4D5H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 07/09/2018&nbsp;at&nbsp;17:06">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">45</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">11/09/2018&nbsp;at&nbsp;16:25
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=280','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">jmr1674740</a> <a href="forum_posts.asp?TID=31641&PN=1&get=last#261180" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31670&PN=1" target="_self" title="地點: S1108分機: 83012有線網路會斷斷續續">*C10-00-19018 [S棟]通識中心 劉老師 有線網路會斷斷續續（2H）</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 10/09/2018&nbsp;at&nbsp;16:47">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">10/09/2018&nbsp;at&nbsp;18:05
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=307','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Shiuan</a> <a href="forum_posts.asp?TID=31670&PN=1&get=last#261153" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+	<a href="forum_posts.asp?TID=31659&PN=1" target="_self" title="地點：新聞系系辦分機：83142電腦螢幕沒有畫面">*C10-00-19012[C棟]新聞系 陳老師 電腦螢幕沒有畫面(1D3H</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=307&FID=21','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 10/09/2018&nbsp;at&nbsp;13:39">Shiuan</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">16</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">10/09/2018&nbsp;at&nbsp;16:35
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=298','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">fang</a> <a href="forum_posts.asp?TID=31659&PN=1&get=last#261145" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+ </tr>
+</table>
+ <table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+  <tr><form><td>&nbsp;</td></tr>
+  <tr>
+   <td>
+	<span class="text">論壇跳轉</span>
+	 <select onChange="ForumJump(this)" name="SelectJumpForum">
+           <option value="" selected>-- 選擇版面 --</option>
+		<option value="">公告、提問、測試區</option>
+		<option value="forum_topics.asp?FID=16">&nbsp;&nbsp;-&nbsp;電算中心公告區</option>
+		<option value="forum_topics.asp?FID=83">&nbsp;&nbsp;-&nbsp;世新大學「新世代校園通訊平台」專區</option>
+		<option value="forum_topics.asp?FID=85">&nbsp;&nbsp;-&nbsp;「舊電腦愛心義賣」專區</option>
+		<option value="forum_topics.asp?FID=90">&nbsp;&nbsp;-&nbsp;「微軟」專區</option>
+		<option value="forum_topics.asp?FID=17">&nbsp;&nbsp;-&nbsp;提問區</option>
+		<option value="forum_topics.asp?FID=84">&nbsp;&nbsp;-&nbsp;上傳專區</option>
+		<option value="forum_topics.asp?FID=18">&nbsp;&nbsp;-&nbsp;測試區</option>
+		<option value="">E化講桌暨電腦教室專區</option>
+		<option value="forum_topics.asp?FID=98">&nbsp;&nbsp;-&nbsp;圖書館</option>
+		<option value="forum_topics.asp?FID=2">&nbsp;&nbsp;-&nbsp;世界大樓</option>
+		<option value="forum_topics.asp?FID=1">&nbsp;&nbsp;-&nbsp;新聞大樓</option>
+		<option value="forum_topics.asp?FID=7">&nbsp;&nbsp;-&nbsp;通識大樓</option>
+		<option value="forum_topics.asp?FID=15">&nbsp;&nbsp;-&nbsp;廣電大樓</option>
+		<option value="forum_topics.asp?FID=8">&nbsp;&nbsp;-&nbsp;舍我大樓</option>
+		<option value="forum_topics.asp?FID=9">&nbsp;&nbsp;-&nbsp;大禮堂</option>
+		<option value="forum_topics.asp?FID=10">&nbsp;&nbsp;-&nbsp;傳播大樓</option>
+		<option value="forum_topics.asp?FID=34">&nbsp;&nbsp;-&nbsp;管院大樓</option>
+		<option value="forum_topics.asp?FID=76">&nbsp;&nbsp;-&nbsp;電腦教室維修紀錄</option>
+		<option value="">維修紀錄區</option>
+		<option value="forum_topics.asp?FID=96">&nbsp;&nbsp;-&nbsp;校友使用電腦教室換證紀錄區</option>
+		<option value="forum_topics.asp?FID=94">&nbsp;&nbsp;-&nbsp;服務紀錄區</option>
+		<option value="forum_topics.asp?FID=92">&nbsp;&nbsp;-&nbsp;維修紀錄(e化講桌)</option>
+		<option value="forum_topics.asp?FID=100">&nbsp;&nbsp;-&nbsp;維修紀錄(視聽器材)</option>
+		<option value="forum_topics.asp?FID=13">&nbsp;&nbsp;-&nbsp;維修紀錄</option>
+		<option value="forum_topics.asp?FID=14">&nbsp;&nbsp;-&nbsp;等待區</option>
+		<option value="forum_topics.asp?FID=74">&nbsp;&nbsp;-&nbsp;黃老師專區(印表機及網點)</option>
+		<option value="forum_topics.asp?FID=87">&nbsp;&nbsp;-&nbsp;軟體光碟燒錄紀錄區</option>
+		<option value="forum_topics.asp?FID=71">&nbsp;&nbsp;-&nbsp;每日日誌區</option>
+		<option value=""> 中毒專區</option>
+		<option value="forum_topics.asp?FID=11">&nbsp;&nbsp;-&nbsp;中毒紀錄區</option>
+		<option value="">工讀生區</option>
+		<option value="">鎖port專區</option>
+		<option value="forum_topics.asp?FID=12">&nbsp;&nbsp;-&nbsp;鎖port記錄區</option>
+		<option value="forum_topics.asp?FID=80">&nbsp;&nbsp;-&nbsp;帳號封鎖區</option>
+		<option value="">結案紀錄統計區</option>
+		<option value="forum_topics.asp?FID=32">&nbsp;&nbsp;-&nbsp;全校E化講桌維修紀錄統計</option>
+		<option value="forum_topics.asp?FID=33">&nbsp;&nbsp;-&nbsp;全校維修紀錄統計區</option>
+		<option value="">結案紀錄區</option>
+		<option value="forum_topics.asp?FID=93">&nbsp;&nbsp;-&nbsp;講桌結案區</option>
+		<option value="forum_topics.asp?FID=101">&nbsp;&nbsp;-&nbsp;視聽器材結案區</option>
+		<option value="forum_topics.asp?FID=19">&nbsp;&nbsp;-&nbsp;已結案-中毒紀錄區</option>
+		<option value="forum_topics.asp?FID=20">&nbsp;&nbsp;-&nbsp;已結案-鎖port專區</option>
+		<option value="forum_topics.asp?FID=21">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-硬體不正常類</option>
+		<option value="forum_topics.asp?FID=22">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-系統類 </option>
+		<option value="forum_topics.asp?FID=23">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-軟體類 </option>
+		<option value="forum_topics.asp?FID=70">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-印表機類</option>
+		<option value="forum_topics.asp?FID=75">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-耗材申請</option>
+		<option value="forum_topics.asp?FID=79">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-網路有問題</option>
+		<option value="forum_topics.asp?FID=25">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-自行排除 </option>
+		<option value="forum_topics.asp?FID=24">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-誤報 </option>
+		<option value="forum_topics.asp?FID=81">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-其他區</option>
+		<option value="forum_topics.asp?FID=86">&nbsp;&nbsp;-&nbsp;權限變更區</option>
+		<option value="">系統組專區</option>
+		<option value="">BBS站長專用的公告申請區</option>
+	</select></td>
+<td align="right"><a href="post_message_form.asp?FID=21" target="_self"><img src="forum_images/new_post.gif" border="0" align="absmiddle" alt="發表新主題"></a></td>
+  </form></tr>
+ </table>
+<div align="center">
+ <table width="98%" border="0" cellspacing="0" cellpadding="1">
+  <tr>
+   <td width="60%"><table width="375" border="0" cellspacing="0" cellpadding="2">
+     <tr>
+      <td class="smText"><img src="forum_images/no_new_posts_icon.gif" alt="普通主題 [無新發表]"> 普通主題 [無新發表]</td>
+      <td class="smText"><img src="forum_images/hot_topic_no_new_posts_icon.gif" alt="熱門主題 [無新發表]"> 熱門主題 [無新發表]</td>
+     </tr>
+     <tr>
+      <td class="smText"><img src="forum_images/new_posts_icon.gif" alt="普通主題 [有新發表]"> 普通主題 [有新發表]</td>
+      <td class="smText"><img src="forum_images/hot_topic_new_posts_icon.gif" alt="熱門主題 [有新發表]"> 熱門主題 [有新發表]</td>
+     </tr>
+     <tr>
+      <td class="smText"><img src="forum_images/closed_topic_icon.gif" alt="鎖定主題"> 鎖定主題</td>
+      <td class="smText"><img src="forum_images/priority_post_icon.gif" alt="公告">  公告</td>
+     </tr>
+     <tr>
+     <td class="smText"><img src="forum_images/pinned_topic_icon.gif" alt="置頂主題"> 置頂主題</td>
+      <td class="smText"><img src="forum_images/priority_post_locked_icon.gif" alt="鎖定公告"> 鎖定公告</td>
+     </tr>
+    </table></td>
+   <td width="40%" align="right" class="smText" nowrap="nowrap">您 <span style="font-weight: bold;">不可以</span> 在本版發表新主題<br />您 <span style="font-weight: bold;">不可以</span> 在本版回覆主題<br />您 <span style="font-weight: bold;">不可以</span> 在本版刪除您的發言<br />您 <span style="font-weight: bold;">不可以</span> 在本版編輯您的發言<br />您 <span style="font-weight: bold;">不可以</span> 在本版建立投票<br />您 <span style="font-weight: bold;">不可以</span> 在本版投票<br /></td>
+  </tr>
+ </table>
+ <br />
+</div>
+<div align="center">
+<span class="text" style="font-size:10px">Powered by <a href="http://www.webwizforums.com" target="_blank" style="font-size:10px">Web Wiz Forums</a> version 7.9</span><br /><span class="text" style="font-size:10px">Copyright &copy;2001-2004 <a href="http://www.webwizguide.info" target="_blank" style="font-size:10px">Web Wiz Guide</a></span>
+</div><!-- footer -->
+</body>
+</html>
