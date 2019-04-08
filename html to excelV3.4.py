@@ -50,18 +50,22 @@ for timeNum in findFirstTimeTd:
 
 for timeCount in range(0,len(arrFirstTimeTagA)):	
 	arrFirstTime.append(arrFirstTimeTagA[timeCount].get("title"))
-	regexTime=re.search(r"(\d{1,2}/\d{1,2}/\d{4}\s[a-z][a-z]\s\d{1,2}:\d{1,2})",arrFirstTime[timeCount])
+	regexTime=re.search(r"(\d{4}/\d{1,2}/\d{1,2}\s[a-z][a-z]\s\d{1,2}:\d{1,2})",arrFirstTime[timeCount])
 	arrRegexFirstTime.append(regexTime)
+	print(timeCount)
 	print(parser.parse(arrRegexFirstTime[timeCount].group(0))) #時間正規化 ex.2018-05-20 12:40:00
-	
-print("lastTime##############")
+# print(arrFirstTime[0])
+# print(arrFirstTime[1])
+# print(arrRegexFirstTime[0])
+# print(arrRegexFirstTime[1])
+print("lastTime#####################################ˇ######")
 #######################lastTime########################
 	
 
 arrLastTime=[]
 arrRegexLastTime=[]
-lastReplyTime=sp.find_all("td",{"class":"smText","align":"right"})
-
+lastReplyTime=sp.find_all("td",{"class":"smText","bgcolor":"#E4EAF2","align":"right"})
+#class="smText" align="right"
 count=0  #lastTimeCount != int
 #date2='2018/05/20 at 12:40' test
 for lastTimeCount in lastReplyTime:
@@ -70,10 +74,10 @@ for lastTimeCount in lastReplyTime:
 	arrRegexLastTime.append(regexTime1)
 	count+=1
 
+for counts in range(0,len(arrFirstTimeTagA)):
+	print(parser.parse(arrRegexLastTime[counts].group(0)))
 
-for count in range(0,len(arrFirstTimeTagA)):
-	print(parser.parse(arrRegexLastTime[count].group(0)))
-
+print("最後回單時間-發單時間##########################################ˇ")
 ######################lastTime-firstTime##########
 finishDay=[]
 finishHour=[]
@@ -83,11 +87,12 @@ for count in range(0,len(arrFirstTimeTagA)):
 	#finishDay
 	firstTime=parser.parse(arrRegexFirstTime[count].group(0))	#時間正規化
 	lastTime=parser.parse(arrRegexLastTime[count].group(0))
+	print(firstTime,"   ",lastTime,"    " )
 	longDay=(lastTime-firstTime).days
 	if longDay==0:
 		longDay=1
 	finishDay.append(longDay)
-	#print(finishDay[count])
+	print(finishDay[count],"相減日期")
 	
 	#finishHour
 	integer=int((lastTime-firstTime).seconds/3600)
@@ -120,7 +125,7 @@ for aCount in range(0,len(arrTitleA)):
 
 #######################excel#####################
 
-filename = '123.xls'
+filename = '1234.xls'
 book = xlwt.Workbook()
 sheet_1 = book.add_sheet('hello')
 sheet_1.col(0).width = 15000
