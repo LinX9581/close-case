@@ -1566,3 +1566,782 @@ function ShowTopics(Show){
 </div><!-- footer -->
 </body>
 </html>
+
+
+
+<html>
+<head>
+<title>電腦維修站: 講桌結案區</title>
+<meta name="copyright" content="Copyright (C) 2001-2004 Bruce Corkhill" />
+
+<!-- Web Wiz Forums ver. 7.9 is written and produced by Bruce Corkhill �2001-2004
+     	If you want your own FREE Forum then goto http://www.webwizforums.com -->
+
+<script language="JavaScript">
+
+//Function to choose how many topics are show
+function ShowTopics(Show){
+
+   	strShow = escape(Show.options[Show.selectedIndex].value);
+   	document.cookie = "TS=" + strShow
+
+   	if (Show != "") self.location.href = "forum_topics.asp?FID=93&PN=1";
+	return true;
+}
+</script>
+<script language="javascript" src="includes/default_javascript.js" type="text/javascript"></script>
+
+<link href="includes/default_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF" text="#000000" background="forum_images/bg.gif"><table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+ <tr> 
+  <td class="text">
+   <a href="http://forum.shu.edu.tw" target="_self"><img src="forum_images/Logo.jpg" border="0"></a>
+  </td>
+  <td align="center" height="2"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td align="center">&nbsp;&nbsp;<a href="active_topics.asp" target="_self" class="nav"><img src="forum_images/active_topics.gif" align="absmiddle" border="0" alt="最新主題">最新主題</a>&nbsp;&nbsp;<a href="members.asp" target="_self" class="nav"><img src="forum_images/members_list.gif" border="0" align="absmiddle" alt="顯示論壇會員列表">會員列表</a>&nbsp;&nbsp;<a href="search_form.asp?FID=93" target="_self" class="nav"><img src="forum_images/search.gif" align="absmiddle" border="0" alt="搜尋論壇">搜尋</a>&nbsp;&nbsp;<a href="help.asp" target="_self" class="nav"><img src="forum_images/help_icon.gif" align="absmiddle" border="0" alt="幫助">幫助</a><br /></td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;&nbsp;<a href="member_control_panel.asp" target="_self" class="nav"><img src="forum_images/admin_icon.gif" border="0" align="absmiddle" alt="會員控制面版選單">控制面版</a>&nbsp;&nbsp;<a href="log_off_user.asp" target="_self" class="nav"><img src="forum_images/log_off_icon.gif" alt="登出" border="0" align="absmiddle">登出 [linx9581]</a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr>
+  <td align="left" class="heading">講桌結案區  <span class="smText">(<img src="forum_images/forum_locked_icon.gif" align="baseline" alt="版面被鎖定"> 版面被鎖定)</span></td>
+</tr>
+ <tr>
+  <td align="left" class="bold"><img src="forum_images/open_folder_icon.gif" border="0" align="absmiddle">&nbsp;<a href="default.asp" target="_self" class="boldLink">電腦維修站</a> : <a href="forum_topics.asp?FID=93" target="_self" class="boldLink">講桌結案區</a></td>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="1" cellpadding="3" align="center">
+ <tr>
+  <form>
+   <td width="50%"><span class="text">顯示主題</span>
+    <select name="show" onChange=ShowTopics(this)>
+     <option value="0" selected>全部</option>
+     <option value="7" >從上個星期開始查看</option>
+     <option value="14" >從前兩個星期開始查看</option>
+     <option value="31" >從上個月份開始查看</option>
+     <option value="62" >從前兩個月開始查看</option>
+     <option value="182" >從前六個月開始查看</option>
+     <option value="365" >從一年前開始查看</option>
+    </select>
+   </td>
+   <td align="right" width="50%"><a href="post_message_form.asp?FID=93" target="_self"><img src="forum_images/new_post.gif" border="0" align="absmiddle" alt="發表新主題"></a></td>
+  </form>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#006699" align="center">
+ <tr>
+  <td>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+    <tr>
+     <td bgcolor="#FFFFFF">
+   <table width="100%" border="0" cellspacing="1" cellpadding="3" bgcolor="#FFFFFF">
+    <tr>
+     <td bgcolor="#CCCCCC" width="3%" class="tHeading" background="forum_images/table_bg_image.gif">&nbsp;</td>
+     <td bgcolor="#CCCCCC" width="41%" class="tHeading" background="forum_images/table_bg_image.gif">主題</td>
+     <td bgcolor="#CCCCCC" width="15%" class="tHeading" background="forum_images/table_bg_image.gif">主題作者</td>
+     <td bgcolor="#CCCCCC" width="7%" align="center" class="tHeading" background="forum_images/table_bg_image.gif">回覆</td>
+     <td bgcolor="#CCCCCC" width="7%" align="center" class="tHeading" background="forum_images/table_bg_image.gif">瀏覽</td>
+     <td bgcolor="#CCCCCC" width="29%" align="center" class="tHeading" background="forum_images/table_bg_image.gif">最後發表</td>
+    </tr>
+<tr><td bgcolor="" background="forum_images/table_bg.gif" colspan="6" class="tiHeading">論壇 主題</td></tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33335','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33335&PN=3" target="_self" title="CB101(3/12 影片播放沒有聲音">CB101(3/12 影片播放沒有聲音(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=307&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/12&nbsp;at&nbsp;08:32">Shiuan</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">7</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/12&nbsp;at&nbsp;09:05
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=307','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Shiuan</a> <a href="forum_posts.asp?TID=33335&PN=3&get=last#267688" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33333','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33333&PN=3" target="_self" title="R304(3/12 無法投影
+BY &#20120;Shiuan43536.3498726852">R304(3/12 無法投影(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=280&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/12&nbsp;at&nbsp;08:09">jmr1674740</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">11</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/12&nbsp;at&nbsp;08:24
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=307','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Shiuan</a> <a href="forum_posts.asp?TID=33333&PN=3&get=last#267682" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33331','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33331&PN=3" target="_self" title="教師機的滑鼠滾輪無法使用">S305(3/11 教師機的滑鼠滾輪無法使用)(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/11&nbsp;at&nbsp;17:17">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">12</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/12&nbsp;at&nbsp;03:00
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=305','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">kyon</a> <a href="forum_posts.asp?TID=33331&PN=3&get=last#267679" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33308','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33308&PN=3" target="_self" title="無法使用硬體廣播">L406(3/8 無法廣播)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=304&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/08&nbsp;at&nbsp;09:25">samuel</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">4</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">23</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/11&nbsp;at&nbsp;19:12
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=305','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">kyon</a> <a href="forum_posts.asp?TID=33308&PN=3&get=last#267675" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33328','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33328&PN=3" target="_self" title="聲音太小聲
+13-15 戚偉恒 領導溝通fang43535.5927430556">M413(3/11 聲音太小聲)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/11&nbsp;at&nbsp;14:11">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">12</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/11&nbsp;at&nbsp;18:58
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=280','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">jmr1674740</a> <a href="forum_posts.asp?TID=33328&PN=3&get=last#267672" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33244','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33244&PN=3" target="_self" title="J310(3/5 電腦無法開機linx958143529.4446296296">J310(3/5 電腦無法開機(複檢) (17-22</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=307&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/05&nbsp;at&nbsp;10:12">Shiuan</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">34</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/11&nbsp;at&nbsp;17:38
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=307','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Shiuan</a> <a href="forum_posts.asp?TID=33244&PN=3&get=last#267671" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33311','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33311&PN=3" target="_self" title="J311講桌電腦網路無法連線">J311(3/11講桌電腦網路無法連線)(17-22</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=311&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/08&nbsp;at&nbsp;10:52">ponqzhen</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">3</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">20</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/11&nbsp;at&nbsp;17:38
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=307','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Shiuan</a> <a href="forum_posts.asp?TID=33311&PN=3&get=last#267670" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33293','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33293&PN=3" target="_self" title="vga線斷掉">C101(3/7 vga線斷掉)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;12:48">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">43</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/11&nbsp;at&nbsp;16:49
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=285','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">zxcv3319</a> <a href="forum_posts.asp?TID=33293&PN=3&get=last#267665" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33325','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33325&PN=3" target="_self" title="電腦打不開">CB206(3/11電腦打不開)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/11&nbsp;at&nbsp;10:52">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/11&nbsp;at&nbsp;11:23
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=33325&PN=3&get=last#267649" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33317','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33317&PN=3" target="_self" title="6-7王健壯 國際新聞專題
+
+聲音出不來">R1001(3/8 聲音出不來)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=301&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/08&nbsp;at&nbsp;14:27">Rina</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">9</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/08&nbsp;at&nbsp;21:06
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=303','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">linx9581</a> <a href="forum_posts.asp?TID=33317&PN=3&get=last#267639" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33261','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33261&PN=3" target="_self" title="M308 投影機關不起來">M308(3/5投影機關不起來)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=306&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/05&nbsp;at&nbsp;18:29">bbryan662</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">40</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/08&nbsp;at&nbsp;16:51
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=301','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Rina</a> <a href="forum_posts.asp?TID=33261&PN=3&get=last#267634" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33316','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33316&PN=3" target="_self" title="6-7劉孝春 中國現代小說
+
+老師反應光碟機被拆解開
+無法使用CD播放教材">CB307(3/8 CD光碟機被拆解)(ok)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=301&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/08&nbsp;at&nbsp;13:56">Rina</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">9</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/08&nbsp;at&nbsp;16:47
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=301','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Rina</a> <a href="forum_posts.asp?TID=33316&PN=3&get=last#267632" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33318','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33318&PN=3" target="_self" title="6-7 胡幼鳳 華人影視市場
+
+開機會亮
+但到桌面畫面前就又黑掉">CB301(3/8 螢幕自動黑屏)(ok)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=301&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/08&nbsp;at&nbsp;15:25">Rina</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">9</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/08&nbsp;at&nbsp;16:44
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=301','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Rina</a> <a href="forum_posts.asp?TID=33318&PN=3&get=last#267630" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33259','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33259&PN=3" target="_self" title="M410 喇叭一直有雜音">M410(3/5喇叭一直有雜音(3/8 OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=306&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/05&nbsp;at&nbsp;17:48">bbryan662</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">22</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/08&nbsp;at&nbsp;16:30
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=303','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">linx9581</a> <a href="forum_posts.asp?TID=33259&PN=3&get=last#267628" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33309','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33309&PN=3" target="_self" title="投影機沒有畫面">M413(3/8 投影機沒有畫面)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=304&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/08&nbsp;at&nbsp;09:27">samuel</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">7</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/08&nbsp;at&nbsp;09:39
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=306','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">bbryan662</a> <a href="forum_posts.asp?TID=33309&PN=3&get=last#267612" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33294','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33294&PN=3" target="_self" title="無法投影">M735(3/7 無法投影)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;13:25">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;16:24
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=294','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">kktjaljiges</a> <a href="forum_posts.asp?TID=33294&PN=3&get=last#267587" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33275','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33275&PN=3" target="_self" title="廣播有問題
+去之前先找鄧老師">L406(3/6廣播有問題)</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=314&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/06&nbsp;at&nbsp;15:58">zhou</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">3</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">36</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;16:16
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=5','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">cydan</a> <a href="forum_posts.asp?TID=33275&PN=3&get=last#267585" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33287','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33287&PN=3" target="_self" title="地點: M520
+分機: 63934
+
+出現應用程式錯誤、RAM不足">*C10-00-19794[M棟]企管系 黃小姐 出現應用程式錯誤(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;10:26">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">8</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;16:11
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=294','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">kktjaljiges</a> <a href="forum_posts.asp?TID=33287&PN=3&get=last#267584" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33268','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33268&PN=3" target="_self" title="所有電腦授權皆有問題無法啟動
+檢查了授權相關的設定沒找出問題
+
+
+
+">S303 AUTODESK授權出問題</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=306&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/06&nbsp;at&nbsp;13:14">bbryan662</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">11</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;15:18
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=5','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">cydan</a> <a href="forum_posts.asp?TID=33268&PN=3&get=last#267577" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33284','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33284&PN=3" target="_self" title="廣播系統無法使用">S303(3/7 廣播系統無法使用)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;09:40">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;11:39
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=33284&PN=3&get=last#267561" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33285','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33285&PN=3" target="_self" title="講桌無法開啟">T201(3/7 講桌無法開啟)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;10:06">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">9</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;11:39
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=33285&PN=3&get=last#267560" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33286','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33286&PN=3" target="_self" title="影片無法撥出聲音">R1001(3/7 影片無法撥出聲音)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;10:23">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">8</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;11:38
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=33286&PN=3&get=last#267559" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33288','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33288&PN=3" target="_self" title="講桌電腦打不開">L406(3/7 講桌電腦打不開)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;10:37">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;11:37
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=33288&PN=3&get=last#267558" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33289','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33289&PN=3" target="_self" title="電腦無法讀取隨身碟檔案">M310(3/7 電腦無法讀取隨身碟檔案)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=298&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;10:49">fang</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;11:09
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=298','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">fang</a> <a href="forum_posts.asp?TID=33289&PN=3&get=last#267557" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33281','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33281&PN=3" target="_self" title="講桌無法開啟">L406(3/7 講桌無法開啟)(OK</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/07&nbsp;at&nbsp;08:29">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">10</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/07&nbsp;at&nbsp;09:39
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=308','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">boris1023</a> <a href="forum_posts.asp?TID=33281&PN=3&get=last#267547" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33271','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33271&PN=3" target="_self" title="講桌無法開啟">G601 (3/6 講桌無法開啟)(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/06&nbsp;at&nbsp;14:37">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">13</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/06&nbsp;at&nbsp;20:35
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=309','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">tian</a> <a href="forum_posts.asp?TID=33271&PN=3&get=last#267539" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33270','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33270&PN=3" target="_self" title="投影機無法和電腦連接">C320 (3/6 投影機無法和電腦連接)(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/06&nbsp;at&nbsp;14:12">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">14</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/06&nbsp;at&nbsp;19:22
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=243','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">xuanzong06</a> <a href="forum_posts.asp?TID=33270&PN=3&get=last#267530" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33274','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33274&PN=3" target="_self" title="請幫忙將自然輸入法的預設值設定為通用拼音並存檔，謝謝。">CB201 設定自然輸入法(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=10&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/06&nbsp;at&nbsp;15:54">HenryCH</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">20</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/06&nbsp;at&nbsp;19:13
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=313','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">rueida</a> <a href="forum_posts.asp?TID=33274&PN=3&get=last#267528" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33278','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33278&PN=3" target="_self" title="電腦聲音很小">M304(3/6 電腦聲音很小)(ok</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=314&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/06&nbsp;at&nbsp;16:05">zhou</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">14</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/06&nbsp;at&nbsp;18:05
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=310','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">Chou</a> <a href="forum_posts.asp?TID=33278&PN=3&get=last#267525" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+	<tr>
+	<td bgcolor="#E4EAF2" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="普通主題 [無新發表]">
+	</td>
+	<td bgcolor="#E4EAF2" background="" width="41%" class="text">
+      <a href="javascript:openWin('pop_up_topic_admin.asp?TID=33253','admin','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"><img src="forum_images/small_admin_icon.gif" align="absmiddle" border="0" alt="文章管理"></a>
+	<a href="forum_posts.asp?TID=33253&PN=3" target="_self" title="5台電腦無法開啟">W401 (3/5  5台電腦無法開啟</a></td>
+     <td bgcolor="#E4EAF2" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?PF=315&FID=93','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')" title="這個主題最先發表於: 2019/03/05&nbsp;at&nbsp;15:35">tsaitsai0322</a></td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#E4EAF2" background="" width="7%" align="center" class="text">18</td>
+     <td bgcolor="#E4EAF2" background="" width="29%" class="smText" align="right" nowrap="nowrap">2019/03/06&nbsp;at&nbsp;16:16
+      <br />By <a href="javascript:openWin('pop_up_profile.asp?PF=5','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=1,resizable=1,width=590,height=425')"  class="smLink">cydan</a> <a href="forum_posts.asp?TID=33253&PN=3&get=last#267521" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="瀏覽最後發表的文章"></a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+ </tr>
+</table>
+ <table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+  <tr><form><td><a href="email_notify.asp?FID=93&PN=3" target="_self">訂閱本版新的發言</a></td>
+		<td align="right" class="text" nowrap="nowrap"><a href="forum_topics.asp?FID=93&PN=2">&lt;&lt&nbsp;上一個</a>&nbsp;第 
+		 <select onChange="ForumJump(this)" name="SelectTopicPage">
+		  <option value="forum_topics.asp?FID=93&PN=1">1</option>
+		  <option value="forum_topics.asp?FID=93&PN=2">2</option>
+		  <option value="forum_topics.asp?FID=93&PN=3" selected>3</option>
+		  <option value="forum_topics.asp?FID=93&PN=4">4</option>
+		  <option value="forum_topics.asp?FID=93&PN=5">5</option>
+		  <option value="forum_topics.asp?FID=93&PN=6">6</option>
+		  <option value="forum_topics.asp?FID=93&PN=7">7</option>
+		  <option value="forum_topics.asp?FID=93&PN=8">8</option>
+		  <option value="forum_topics.asp?FID=93&PN=9">9</option>
+		  <option value="forum_topics.asp?FID=93&PN=10">10</option>
+		  <option value="forum_topics.asp?FID=93&PN=11">11</option>
+		  <option value="forum_topics.asp?FID=93&PN=12">12</option>
+		  <option value="forum_topics.asp?FID=93&PN=13">13</option>
+		  <option value="forum_topics.asp?FID=93&PN=14">14</option>
+		  <option value="forum_topics.asp?FID=93&PN=15">15</option>
+		  <option value="forum_topics.asp?FID=93&PN=16">16</option>
+		  <option value="forum_topics.asp?FID=93&PN=17">17</option>
+		  <option value="forum_topics.asp?FID=93&PN=18">18</option>
+		  <option value="forum_topics.asp?FID=93&PN=19">19</option>
+		  <option value="forum_topics.asp?FID=93&PN=20">20</option>
+		  <option value="forum_topics.asp?FID=93&PN=21">21</option>
+		  <option value="forum_topics.asp?FID=93&PN=22">22</option>
+		  <option value="forum_topics.asp?FID=93&PN=23">23</option>
+		  <option value="forum_topics.asp?FID=93&PN=24">24</option>
+		  <option value="forum_topics.asp?FID=93&PN=25">25</option>
+		  <option value="forum_topics.asp?FID=93&PN=26">26</option>
+		  <option value="forum_topics.asp?FID=93&PN=27">27</option>
+		  <option value="forum_topics.asp?FID=93&PN=28">28</option>
+		  <option value="forum_topics.asp?FID=93&PN=29">29</option>
+		  <option value="forum_topics.asp?FID=93&PN=30">30</option>
+		  <option value="forum_topics.asp?FID=93&PN=31">31</option>
+		  <option value="forum_topics.asp?FID=93&PN=32">32</option>
+		  <option value="forum_topics.asp?FID=93&PN=33">33</option>
+		  <option value="forum_topics.asp?FID=93&PN=34">34</option>
+		  <option value="forum_topics.asp?FID=93&PN=35">35</option>
+		  <option value="forum_topics.asp?FID=93&PN=36">36</option>
+		  <option value="forum_topics.asp?FID=93&PN=37">37</option>
+		  <option value="forum_topics.asp?FID=93&PN=38">38</option>
+		  <option value="forum_topics.asp?FID=93&PN=39">39</option>
+		  <option value="forum_topics.asp?FID=93&PN=40">40</option>
+		  <option value="forum_topics.asp?FID=93&PN=41">41</option>
+		  <option value="forum_topics.asp?FID=93&PN=42">42</option>
+		  <option value="forum_topics.asp?FID=93&PN=43">43</option>
+		  <option value="forum_topics.asp?FID=93&PN=44">44</option>
+		  <option value="forum_topics.asp?FID=93&PN=45">45</option>
+		  <option value="forum_topics.asp?FID=93&PN=46">46</option>
+		  <option value="forum_topics.asp?FID=93&PN=47">47</option>
+		  <option value="forum_topics.asp?FID=93&PN=48">48</option>
+		  <option value="forum_topics.asp?FID=93&PN=49">49</option>
+		  <option value="forum_topics.asp?FID=93&PN=50">50</option>
+		  <option value="forum_topics.asp?FID=93&PN=51">51</option>
+		  <option value="forum_topics.asp?FID=93&PN=52">52</option>
+		  <option value="forum_topics.asp?FID=93&PN=53">53</option>
+		  <option value="forum_topics.asp?FID=93&PN=54">54</option>
+		  <option value="forum_topics.asp?FID=93&PN=55">55</option>
+		  <option value="forum_topics.asp?FID=93&PN=56">56</option>
+		  <option value="forum_topics.asp?FID=93&PN=57">57</option>
+		  <option value="forum_topics.asp?FID=93&PN=58">58</option>
+		  <option value="forum_topics.asp?FID=93&PN=59">59</option>
+		  <option value="forum_topics.asp?FID=93&PN=60">60</option>
+		  <option value="forum_topics.asp?FID=93&PN=61">61</option>
+		  <option value="forum_topics.asp?FID=93&PN=62">62</option>
+		  <option value="forum_topics.asp?FID=93&PN=63">63</option>
+		  <option value="forum_topics.asp?FID=93&PN=64">64</option>
+		  <option value="forum_topics.asp?FID=93&PN=65">65</option>
+		  <option value="forum_topics.asp?FID=93&PN=66">66</option>
+		  <option value="forum_topics.asp?FID=93&PN=67">67</option>
+		  <option value="forum_topics.asp?FID=93&PN=68">68</option>
+		  <option value="forum_topics.asp?FID=93&PN=69">69</option>
+		  <option value="forum_topics.asp?FID=93&PN=70">70</option>
+		  <option value="forum_topics.asp?FID=93&PN=71">71</option>
+		  <option value="forum_topics.asp?FID=93&PN=72">72</option>
+		  <option value="forum_topics.asp?FID=93&PN=73">73</option>
+		  <option value="forum_topics.asp?FID=93&PN=74">74</option>
+		  <option value="forum_topics.asp?FID=93&PN=75">75</option>
+		  <option value="forum_topics.asp?FID=93&PN=76">76</option>
+		  <option value="forum_topics.asp?FID=93&PN=77">77</option>
+		  <option value="forum_topics.asp?FID=93&PN=78">78</option>
+		  <option value="forum_topics.asp?FID=93&PN=79">79</option>
+		  <option value="forum_topics.asp?FID=93&PN=80">80</option>
+		  <option value="forum_topics.asp?FID=93&PN=81">81</option>
+		  <option value="forum_topics.asp?FID=93&PN=82">82</option>
+		  <option value="forum_topics.asp?FID=93&PN=83">83</option>
+		  <option value="forum_topics.asp?FID=93&PN=84">84</option>
+		  <option value="forum_topics.asp?FID=93&PN=85">85</option>
+		  <option value="forum_topics.asp?FID=93&PN=86">86</option>
+		  <option value="forum_topics.asp?FID=93&PN=87">87</option>
+		  <option value="forum_topics.asp?FID=93&PN=88">88</option>
+		  <option value="forum_topics.asp?FID=93&PN=89">89</option>
+		  <option value="forum_topics.asp?FID=93&PN=90">90</option>
+		  <option value="forum_topics.asp?FID=93&PN=91">91</option>
+		  <option value="forum_topics.asp?FID=93&PN=92">92</option>
+		  <option value="forum_topics.asp?FID=93&PN=93">93</option>
+		  <option value="forum_topics.asp?FID=93&PN=94">94</option>
+		  <option value="forum_topics.asp?FID=93&PN=95">95</option>
+		  <option value="forum_topics.asp?FID=93&PN=96">96</option>
+		  <option value="forum_topics.asp?FID=93&PN=97">97</option>
+		  <option value="forum_topics.asp?FID=93&PN=98">98</option>
+		  <option value="forum_topics.asp?FID=93&PN=99">99</option>
+		  <option value="forum_topics.asp?FID=93&PN=100">100</option>
+		  <option value="forum_topics.asp?FID=93&PN=101">101</option>
+		  <option value="forum_topics.asp?FID=93&PN=102">102</option>
+		  <option value="forum_topics.asp?FID=93&PN=103">103</option>
+		  <option value="forum_topics.asp?FID=93&PN=104">104</option>
+		  <option value="forum_topics.asp?FID=93&PN=105">105</option>
+		  <option value="forum_topics.asp?FID=93&PN=106">106</option>
+		  <option value="forum_topics.asp?FID=93&PN=107">107</option>
+		  <option value="forum_topics.asp?FID=93&PN=108">108</option>
+		  <option value="forum_topics.asp?FID=93&PN=109">109</option>
+		  <option value="forum_topics.asp?FID=93&PN=110">110</option>
+		  <option value="forum_topics.asp?FID=93&PN=111">111</option>
+		  <option value="forum_topics.asp?FID=93&PN=112">112</option>
+		  <option value="forum_topics.asp?FID=93&PN=113">113</option>
+		  <option value="forum_topics.asp?FID=93&PN=114">114</option>
+		  <option value="forum_topics.asp?FID=93&PN=115">115</option>
+		  <option value="forum_topics.asp?FID=93&PN=116">116</option>
+		  <option value="forum_topics.asp?FID=93&PN=117">117</option>
+		  <option value="forum_topics.asp?FID=93&PN=118">118</option>
+		  <option value="forum_topics.asp?FID=93&PN=119">119</option>
+		  <option value="forum_topics.asp?FID=93&PN=120">120</option>
+		  <option value="forum_topics.asp?FID=93&PN=121">121</option>
+		  <option value="forum_topics.asp?FID=93&PN=122">122</option>
+		  <option value="forum_topics.asp?FID=93&PN=123">123</option>
+		  <option value="forum_topics.asp?FID=93&PN=124">124</option>
+		  <option value="forum_topics.asp?FID=93&PN=125">125</option>
+		  <option value="forum_topics.asp?FID=93&PN=126">126</option>
+		  <option value="forum_topics.asp?FID=93&PN=127">127</option>
+		  <option value="forum_topics.asp?FID=93&PN=128">128</option>
+		  <option value="forum_topics.asp?FID=93&PN=129">129</option>
+		  <option value="forum_topics.asp?FID=93&PN=130">130</option>
+		  <option value="forum_topics.asp?FID=93&PN=131">131</option>
+		  <option value="forum_topics.asp?FID=93&PN=132">132</option>
+		  <option value="forum_topics.asp?FID=93&PN=133">133</option>
+		  <option value="forum_topics.asp?FID=93&PN=134">134</option>
+		  <option value="forum_topics.asp?FID=93&PN=135">135</option>
+		  <option value="forum_topics.asp?FID=93&PN=136">136</option>
+		  <option value="forum_topics.asp?FID=93&PN=137">137</option>
+		  <option value="forum_topics.asp?FID=93&PN=138">138</option>
+		  <option value="forum_topics.asp?FID=93&PN=139">139</option>
+		  <option value="forum_topics.asp?FID=93&PN=140">140</option>
+		  <option value="forum_topics.asp?FID=93&PN=141">141</option>
+		  <option value="forum_topics.asp?FID=93&PN=142">142</option>
+		  <option value="forum_topics.asp?FID=93&PN=143">143</option>
+		  <option value="forum_topics.asp?FID=93&PN=144">144</option>
+		  <option value="forum_topics.asp?FID=93&PN=145">145</option>
+		  <option value="forum_topics.asp?FID=93&PN=146">146</option>
+		  <option value="forum_topics.asp?FID=93&PN=147">147</option>
+		  <option value="forum_topics.asp?FID=93&PN=148">148</option>
+		  <option value="forum_topics.asp?FID=93&PN=149">149</option>
+		  <option value="forum_topics.asp?FID=93&PN=150">150</option>
+		  <option value="forum_topics.asp?FID=93&PN=151">151</option>
+		  <option value="forum_topics.asp?FID=93&PN=152">152</option>
+		  <option value="forum_topics.asp?FID=93&PN=153">153</option>
+		  <option value="forum_topics.asp?FID=93&PN=154">154</option>
+		  <option value="forum_topics.asp?FID=93&PN=155">155</option>
+		  <option value="forum_topics.asp?FID=93&PN=156">156</option>
+		  <option value="forum_topics.asp?FID=93&PN=157">157</option>
+		  <option value="forum_topics.asp?FID=93&PN=158">158</option>
+		  <option value="forum_topics.asp?FID=93&PN=159">159</option>
+		  <option value="forum_topics.asp?FID=93&PN=160">160</option>
+		  <option value="forum_topics.asp?FID=93&PN=161">161</option>
+		  <option value="forum_topics.asp?FID=93&PN=162">162</option>
+		  <option value="forum_topics.asp?FID=93&PN=163">163</option>
+		  <option value="forum_topics.asp?FID=93&PN=164">164</option>
+		  <option value="forum_topics.asp?FID=93&PN=165">165</option>
+		  <option value="forum_topics.asp?FID=93&PN=166">166</option>
+		  <option value="forum_topics.asp?FID=93&PN=167">167</option>
+		  <option value="forum_topics.asp?FID=93&PN=168">168</option>
+		  <option value="forum_topics.asp?FID=93&PN=169">169</option>
+		  <option value="forum_topics.asp?FID=93&PN=170">170</option>
+		  <option value="forum_topics.asp?FID=93&PN=171">171</option>
+		  <option value="forum_topics.asp?FID=93&PN=172">172</option>
+		  <option value="forum_topics.asp?FID=93&PN=173">173</option>
+		  <option value="forum_topics.asp?FID=93&PN=174">174</option>
+		  <option value="forum_topics.asp?FID=93&PN=175">175</option>
+		  <option value="forum_topics.asp?FID=93&PN=176">176</option>
+		  <option value="forum_topics.asp?FID=93&PN=177">177</option>
+		  <option value="forum_topics.asp?FID=93&PN=178">178</option>
+		  <option value="forum_topics.asp?FID=93&PN=179">179</option>
+		  <option value="forum_topics.asp?FID=93&PN=180">180</option>
+		  <option value="forum_topics.asp?FID=93&PN=181">181</option>
+		  <option value="forum_topics.asp?FID=93&PN=182">182</option>
+		  <option value="forum_topics.asp?FID=93&PN=183">183</option>
+		  <option value="forum_topics.asp?FID=93&PN=184">184</option>
+		  <option value="forum_topics.asp?FID=93&PN=185">185</option>
+		  <option value="forum_topics.asp?FID=93&PN=186">186</option>
+		  <option value="forum_topics.asp?FID=93&PN=187">187</option>
+		  <option value="forum_topics.asp?FID=93&PN=188">188</option>
+		  <option value="forum_topics.asp?FID=93&PN=189">189</option>
+		  <option value="forum_topics.asp?FID=93&PN=190">190</option>
+		  <option value="forum_topics.asp?FID=93&PN=191">191</option>
+		  <option value="forum_topics.asp?FID=93&PN=192">192</option>
+		  <option value="forum_topics.asp?FID=93&PN=193">193</option>
+		  <option value="forum_topics.asp?FID=93&PN=194">194</option>
+		  <option value="forum_topics.asp?FID=93&PN=195">195</option>
+		  <option value="forum_topics.asp?FID=93&PN=196">196</option>
+		  <option value="forum_topics.asp?FID=93&PN=197">197</option>
+		  <option value="forum_topics.asp?FID=93&PN=198">198</option>
+		  <option value="forum_topics.asp?FID=93&PN=199">199</option>
+		  <option value="forum_topics.asp?FID=93&PN=200">200</option>
+		  <option value="forum_topics.asp?FID=93&PN=201">201</option>
+		  <option value="forum_topics.asp?FID=93&PN=202">202</option>
+		</select> 頁，共 202&nbsp;<a href="forum_topics.asp?FID=93&PN=4">下一個&nbsp;&gt;&gt;</a></td></tr>
+  <tr>
+   <td>
+	<span class="text">論壇跳轉</span>
+	 <select onChange="ForumJump(this)" name="SelectJumpForum">
+           <option value="" selected>-- 選擇版面 --</option>
+		<option value="">公告、提問、測試區</option>
+		<option value="forum_topics.asp?FID=16">&nbsp;&nbsp;-&nbsp;電算中心公告區</option>
+		<option value="forum_topics.asp?FID=83">&nbsp;&nbsp;-&nbsp;世新大學「新世代校園通訊平台」專區</option>
+		<option value="forum_topics.asp?FID=85">&nbsp;&nbsp;-&nbsp;「舊電腦愛心義賣」專區</option>
+		<option value="forum_topics.asp?FID=90">&nbsp;&nbsp;-&nbsp;「微軟」專區</option>
+		<option value="forum_topics.asp?FID=17">&nbsp;&nbsp;-&nbsp;提問區</option>
+		<option value="forum_topics.asp?FID=84">&nbsp;&nbsp;-&nbsp;上傳專區</option>
+		<option value="forum_topics.asp?FID=18">&nbsp;&nbsp;-&nbsp;測試區</option>
+		<option value="">E化講桌暨電腦教室專區</option>
+		<option value="forum_topics.asp?FID=98">&nbsp;&nbsp;-&nbsp;圖書館</option>
+		<option value="forum_topics.asp?FID=2">&nbsp;&nbsp;-&nbsp;世界大樓</option>
+		<option value="forum_topics.asp?FID=1">&nbsp;&nbsp;-&nbsp;新聞大樓</option>
+		<option value="forum_topics.asp?FID=7">&nbsp;&nbsp;-&nbsp;通識大樓</option>
+		<option value="forum_topics.asp?FID=15">&nbsp;&nbsp;-&nbsp;廣電大樓</option>
+		<option value="forum_topics.asp?FID=8">&nbsp;&nbsp;-&nbsp;舍我大樓</option>
+		<option value="forum_topics.asp?FID=9">&nbsp;&nbsp;-&nbsp;大禮堂</option>
+		<option value="forum_topics.asp?FID=10">&nbsp;&nbsp;-&nbsp;傳播大樓</option>
+		<option value="forum_topics.asp?FID=34">&nbsp;&nbsp;-&nbsp;管院大樓</option>
+		<option value="forum_topics.asp?FID=76">&nbsp;&nbsp;-&nbsp;電腦教室維修紀錄</option>
+		<option value="forum_topics.asp?FID=82">&nbsp;&nbsp;-&nbsp;E化講桌資料備份區　</option>
+		<option value="forum_topics.asp?FID=95">&nbsp;&nbsp;-&nbsp;ｅ化講桌的支援用筆電</option>
+		<option value="">維修紀錄區</option>
+		<option value="forum_topics.asp?FID=96">&nbsp;&nbsp;-&nbsp;校友使用電腦教室換證紀錄區</option>
+		<option value="forum_topics.asp?FID=94">&nbsp;&nbsp;-&nbsp;服務紀錄區</option>
+		<option value="forum_topics.asp?FID=92">&nbsp;&nbsp;-&nbsp;維修紀錄(e化講桌)</option>
+		<option value="forum_topics.asp?FID=100">&nbsp;&nbsp;-&nbsp;維修紀錄(視聽器材)</option>
+		<option value="forum_topics.asp?FID=13">&nbsp;&nbsp;-&nbsp;維修紀錄</option>
+		<option value="forum_topics.asp?FID=14">&nbsp;&nbsp;-&nbsp;等待區</option>
+		<option value="forum_topics.asp?FID=74">&nbsp;&nbsp;-&nbsp;黃老師專區(印表機及網點)</option>
+		<option value="forum_topics.asp?FID=87">&nbsp;&nbsp;-&nbsp;軟體光碟燒錄紀錄區</option>
+		<option value="forum_topics.asp?FID=71">&nbsp;&nbsp;-&nbsp;每日日誌區</option>
+		<option value=""> 中毒專區</option>
+		<option value="forum_topics.asp?FID=11">&nbsp;&nbsp;-&nbsp;中毒紀錄區</option>
+		<option value="">工讀生區</option>
+		<option value="forum_topics.asp?FID=99">&nbsp;&nbsp;-&nbsp;維修與櫃檯密技</option>
+		<option value="forum_topics.asp?FID=97">&nbsp;&nbsp;-&nbsp;計中練功房</option>
+		<option value="forum_topics.asp?FID=77">&nbsp;&nbsp;-&nbsp;工讀生talk</option>
+		<option value="">鎖port專區</option>
+		<option value="forum_topics.asp?FID=12">&nbsp;&nbsp;-&nbsp;鎖port記錄區</option>
+		<option value="forum_topics.asp?FID=80">&nbsp;&nbsp;-&nbsp;帳號封鎖區</option>
+		<option value="">結案紀錄統計區</option>
+		<option value="forum_topics.asp?FID=32">&nbsp;&nbsp;-&nbsp;全校E化講桌維修紀錄統計</option>
+		<option value="forum_topics.asp?FID=33">&nbsp;&nbsp;-&nbsp;全校維修紀錄統計區</option>
+		<option value="">結案紀錄區</option>
+		<option value="forum_topics.asp?FID=104">&nbsp;&nbsp;-&nbsp;已結案-電腦教室維修紀錄區</option>
+		<option value="forum_topics.asp?FID=93">&nbsp;&nbsp;-&nbsp;講桌結案區</option>
+		<option value="forum_topics.asp?FID=101">&nbsp;&nbsp;-&nbsp;視聽器材結案區</option>
+		<option value="forum_topics.asp?FID=19">&nbsp;&nbsp;-&nbsp;已結案-中毒紀錄區</option>
+		<option value="forum_topics.asp?FID=20">&nbsp;&nbsp;-&nbsp;已結案-鎖port專區</option>
+		<option value="forum_topics.asp?FID=21">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-硬體不正常類</option>
+		<option value="forum_topics.asp?FID=22">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-系統類 </option>
+		<option value="forum_topics.asp?FID=23">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-軟體類 </option>
+		<option value="forum_topics.asp?FID=70">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-印表機類</option>
+		<option value="forum_topics.asp?FID=75">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-耗材申請</option>
+		<option value="forum_topics.asp?FID=79">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-網路有問題</option>
+		<option value="forum_topics.asp?FID=25">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-自行排除 </option>
+		<option value="forum_topics.asp?FID=24">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-誤報 </option>
+		<option value="forum_topics.asp?FID=81">&nbsp;&nbsp;-&nbsp;已結案維修紀錄-其他區</option>
+		<option value="forum_topics.asp?FID=86">&nbsp;&nbsp;-&nbsp;權限變更區</option>
+		<option value="">系統組專區</option>
+		<option value="">BBS站長專用的公告申請區</option>
+	</select></td>
+<td align="right"><a href="post_message_form.asp?FID=93" target="_self"><img src="forum_images/new_post.gif" border="0" align="absmiddle" alt="發表新主題"></a></td>
+  </form></tr>
+ </table>
+<div align="center">
+ <table width="98%" border="0" cellspacing="0" cellpadding="1">
+  <tr>
+   <td width="60%"><table width="375" border="0" cellspacing="0" cellpadding="2">
+     <tr>
+      <td class="smText"><img src="forum_images/no_new_posts_icon.gif" alt="普通主題 [無新發表]"> 普通主題 [無新發表]</td>
+      <td class="smText"><img src="forum_images/hot_topic_no_new_posts_icon.gif" alt="熱門主題 [無新發表]"> 熱門主題 [無新發表]</td>
+     </tr>
+     <tr>
+      <td class="smText"><img src="forum_images/new_posts_icon.gif" alt="普通主題 [有新發表]"> 普通主題 [有新發表]</td>
+      <td class="smText"><img src="forum_images/hot_topic_new_posts_icon.gif" alt="熱門主題 [有新發表]"> 熱門主題 [有新發表]</td>
+     </tr>
+     <tr>
+      <td class="smText"><img src="forum_images/closed_topic_icon.gif" alt="鎖定主題"> 鎖定主題</td>
+      <td class="smText"><img src="forum_images/priority_post_icon.gif" alt="公告">  公告</td>
+     </tr>
+     <tr>
+     <td class="smText"><img src="forum_images/pinned_topic_icon.gif" alt="置頂主題"> 置頂主題</td>
+      <td class="smText"><img src="forum_images/priority_post_locked_icon.gif" alt="鎖定公告"> 鎖定公告</td>
+     </tr>
+    </table></td>
+   <td width="40%" align="right" class="smText" nowrap="nowrap">您 <span style="font-weight: bold;">可以</span> 在本版發表新主題<br />您 <span style="font-weight: bold;">可以</span> 在本版回覆主題<br />您 <span style="font-weight: bold;">可以</span> 在本版刪除您的發言<br />您 <span style="font-weight: bold;">可以</span> 在本版編輯您的發言<br />您 <span style="font-weight: bold;">不可以</span> 在本版建立投票<br />您 <span style="font-weight: bold;">不可以</span> 在本版投票<br /></td>
+  </tr>
+ </table>
+ <br />
+</div>
+<div align="center">
+<span class="text" style="font-size:10px">Powered by <a href="http://www.webwizforums.com" target="_blank" style="font-size:10px">Web Wiz Forums</a> version 7.9</span><br /><span class="text" style="font-size:10px">Copyright &copy;2001-2004 <a href="http://www.webwizguide.info" target="_blank" style="font-size:10px">Web Wiz Guide</a></span>
+</div><!-- footer -->
+</body>
+</html>
