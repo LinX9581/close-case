@@ -75,8 +75,8 @@ for lastTimeCount in lastReplyTime:
 	count+=1
 
 for counts in range(0,len(arrFirstTimeTagA)):
-	print(parser.parse(arrRegexLastTime[counts].group(0)))
-
+	print(parser.parse(arrRegexLastTime[counts].group(0)))	# 2019-03-06 16:16:00
+#print(arrRegexLastTime[counts].group(0))					# 2019/03/06 at 16:16
 print("最後回單時間-發單時間##########################################ˇ")
 ######################lastTime-firstTime##########
 finishDay=[]
