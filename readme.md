@@ -1,17 +1,19 @@
 <pre>
+<h2>
 爬取網頁元素到 excel
 下面介紹套件和使用方法
+</h2>
 
-<h2> python -m pip install --upgrade pip 
+<h3> python -m pip install --upgrade pip </h3>
 更新 pip modules
 
-<h2> pip install beautifulsoup4
+<h3> pip install beautifulsoup4 </h3>
 解析網頁原始碼
 
-<h2> pip install requests
+<h3> pip install requests </h3>
 解析網址
 
-<h2> pip install xlwt
+<h3> pip install xlwt </h3>
 
 filename = 'filemane.xls'
 book = xlwt.Workbook()
@@ -25,7 +27,7 @@ book.save(filename)                 //輸出excel
 python轉輸出到excel
 
 
-<h2> regex
+<h3> regex </h3>
 從字串中 正規化時間
 ex.
 title="這個主題最先發表於: 2019/03/20&nbsp;at&nbsp;09:18"
