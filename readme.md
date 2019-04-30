@@ -34,7 +34,7 @@ title="這個主題最先發表於: 2019/03/20&nbsp;at&nbsp;09:18"
 regexTime=re.search(r"(\d{4}/\d{1,2}/\d{1,2}\s[a-z][a-z]\s\d{1,2}:\d{1,2})",title)
 regexTime= "2018/05/20 at 12:40:00"
 
-<h2> pip install python-dateutil
+<h3> pip install python-dateutil</h3>
 可以使用parse方法
 
 parser.parse(regexTime)
