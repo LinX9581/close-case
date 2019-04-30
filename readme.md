@@ -1,7 +1,7 @@
 <pre>
 <h2>
-爬取網頁元素到 excel
-下面介紹套件和使用方法
+用python 爬取網頁元素 再轉輸出到excel
+下面為使用套件和使用方法
 </h2>
 
 <h3> python -m pip install --upgrade pip </h3>
