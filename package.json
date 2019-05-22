@@ -1,0 +1,25 @@
+{
+  "name": "close-case",
+  "version": "1.0.0",
+  "description": "下面為使用套件和使用方法",
+  "main": "close-case-js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LinX9581/close-case.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LinX9581/close-case/issues"
+  },
+  "homepage": "https://github.com/LinX9581/close-case#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "puppeteer": "^1.16.0",
+    "request": "^2.88.0"
+  }
+}
